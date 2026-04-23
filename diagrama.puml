@@ -1,0 +1,44 @@
+@startuml
+
+
+class Persona {
+  - id: String
+  - nombre: String
+  - edad: int
+  
+  + Persona(id: String, nombre: String, edad: int)
+  + toString(): String
+  + getNombre(): String
+}
+
+class Estudiante {
+  - codigo: String
+  
+  + Estudiante(id: String, nombre: String, edad: int, codigo: String)
+  + toString(): String
+}
+
+class Docente {
+  - especialidad: String
+  - horas: int
+  - valorHora: double
+  
+  + Docente(id: String, nombre: String, edad: int, esp: String, h: int, v: double)
+  + calcularPago(): double
+  + toString(): String
+}
+
+class Administrativo {
+  - cargo: String
+  - salarioFijo: double
+  
+  + Administrativo(id: String, nombre: String, edad: int, cargo: String, salario: double)
+  + calcularPago(): double
+  + toString(): String
+}
+
+Persona <|-- Estudiante
+Persona <|-- Docente
+Persona <|-- Administrativo
+
+@enduml
