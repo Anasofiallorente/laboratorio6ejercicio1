@@ -1,1 +1,1 @@
-# laboratorio6ejercicio2
+# laboratorio6ejercicio1
